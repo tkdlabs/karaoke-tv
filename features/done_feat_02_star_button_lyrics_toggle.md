@@ -2,7 +2,7 @@
 
 ## Description
 
-The an Android TV device remote has a star (⊛) button mapped to `KEYCODE_SETTINGS`.
+The remote for an Android TV device has a star (⊛) button mapped to `KEYCODE_SETTINGS`.
 Add it as an additional trigger for cycling lyrics modes in `PlayerScreen`,
 alongside the existing `KEYCODE_PROG_RED` and `KEYCODE_L` (keyboard) bindings.
 

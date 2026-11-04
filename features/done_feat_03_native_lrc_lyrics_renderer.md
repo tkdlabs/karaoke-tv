@@ -13,7 +13,7 @@ switch back to video-overlay mode at any time.
 ## Motivation
 
 Switching video streams (e.g. plain → lyrics overlay) causes a buffering stall
-on lower-end streaming boxes (e.g. an Android TV device). Native rendering eliminates
+on lower-end streaming boxes (e.g. a low-end Android TV box). Native rendering eliminates
 the stream swap — the video stays on the plain stream and lyrics are composited
 in the app.
 

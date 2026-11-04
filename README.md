@@ -48,6 +48,9 @@ A convenience wrapper is available:
 ./scripts/deploy.sh <TV_IP>
 ```
 
+Release builds are unsigned by default. Add your own signing configuration before
+distributing a release APK.
+
 ## Configuration
 
 The app has no default backend address. On first launch, open **Settings** and
