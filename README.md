@@ -60,8 +60,11 @@ enter the backend URL, for example:
 http://192.168.1.50:8001
 ```
 
-The Android emulator can reach a backend running on the host machine at
-`http://10.0.2.2:8001`.
+In the standard Android emulator, `10.0.2.2` is a special alias for the host
+machine's loopback interface, so `http://10.0.2.2:8001` reaches a backend
+running on the host. On a physical TV, use the host's LAN IP instead.
+For a USB-connected device, `adb reverse tcp:8001 tcp:8001` lets you use
+`http://127.0.0.1:8001`.
 
 Settings are stored with Android DataStore and can be changed at any time.
 

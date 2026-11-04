@@ -38,8 +38,10 @@ adb install -r app/build/outputs/apk/debug/app-debug.apk
 ```
 
 There is no hardcoded backend address. On first launch, open **Settings** and
-enter the backend URL (for example `http://192.168.1.50:8001`). The Android
-emulator can reach a host machine via `http://10.0.2.2:8001`.
+enter the backend URL (for example `http://192.168.1.50:8001`). In the standard
+Android emulator, `10.0.2.2` is a special alias for the host machine's loopback
+interface, so `http://10.0.2.2:8001` reaches a backend running on the host. On a
+physical TV, use the host's LAN IP instead.
 
 ## Backend API used
 
